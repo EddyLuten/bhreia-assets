@@ -34,3 +34,28 @@
     margin: 0 auto;
     border: 1px solid rgba(0, 0, 0, 0.54);
 }
+
+.stats {
+    margin: 0 !important;
+    font-family: 'Libre Baskerville', 'Lora', 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;
+    color: #922610;
+    border-top: 10px solid #E69A28;
+    border-bottom: none;
+    padding: 1em;
+    background: #FDF1DC;
+}
+
+.stats ~ p.stat {
+    color: black;
+    margin: 0;
+    padding: 1em;
+    background: #FDF1DC;
+}
+
+.stats ~ p.stat strong {
+    color: #922610;
+}
+
+.stats ~ p.stat:last-of-type {
+    border-bottom: 10px solid #E69A28;
+}
