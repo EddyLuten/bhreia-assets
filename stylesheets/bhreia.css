@@ -1,4 +1,5 @@
 .infobox {
+    background-color: var(--md-default-bg-color--light);
     display: block;
     margin: 5px;
     width: 370px !important;
@@ -7,9 +8,8 @@
 }
 
 .infobox h3 {
-    background-color: rgba(0,184,212,.1);
-    /* color: white; */
-    /* border-bottom: 1px solid rgba(0, 0, 0, 0.54); */
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
     padding: 5px;
     margin: 0 0 1em 0;
 }
@@ -37,6 +37,7 @@
 
 .stats {
     margin: 0 !important;
+    margin-top: 1em !important;
     font-family: 'Libre Baskerville', 'Lora', 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;
     color: #922610;
     border-top: 10px solid #E69A28;
@@ -54,8 +55,4 @@
 
 .stats ~ p.stat strong {
     color: #922610;
-}
-
-.stats ~ p.stat:last-of-type {
-    border-bottom: 10px solid #E69A28;
 }
