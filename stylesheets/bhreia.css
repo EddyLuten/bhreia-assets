@@ -35,24 +35,84 @@
     border: 1px solid rgba(0, 0, 0, 0.54);
 }
 
+/*******************************************************************************
+ *
+ * STATS BLOCK
+ *
+ ******************************************************************************/
+
 .stats {
     margin: 0 !important;
     margin-top: 1em !important;
     font-family: 'Libre Baskerville', 'Lora', 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;
     color: #922610;
     border-top: 10px solid #E69A28;
-    border-bottom: none;
-    padding: 1em;
+    padding: 0.2em 0.5em;
     background: #FDF1DC;
 }
 
-.stats ~ p.stat {
+.stats ~ p.stat, .stats ~p.ability {
     color: black;
     margin: 0;
-    padding: 1em;
+    padding: 0.2em 0.5em;
     background: #FDF1DC;
 }
 
-.stats ~ p.stat strong {
+.stats ~p.alignment {
+    border-bottom: 2px solid #922610;
+}
+
+.stats ~p.ability > strong {
+    color: black;
+    font-style: italic;
+}
+
+.stats ~ p.stat > strong {
     color: #922610;
+}
+
+.actions {
+    margin: 0 !important;
+    color: #922610;
+    border-top: 2px solid #922610;
+    padding: 0.5em;
+    background: #FDF1DC;
+}
+
+.actions ~ p.action {
+    color: black;
+    margin: 0;
+    padding: 0.5em;
+    background: #FDF1DC;
+}
+
+.actions ~p.action strong {
+    color: black;
+    font-style: italic;
+}
+
+/********* SCORE TABLE *********/
+
+.stats ~ p.stat + .md-typeset__scrollwrap {
+    margin: 0;
+}
+
+.stats ~ p.stat + .md-typeset__scrollwrap > .md-typeset__table {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.stats ~ p.stat + .md-typeset__scrollwrap > .md-typeset__table > table {
+    border-top: 2px solid #922610;
+    font-size: 1em;
+    text-align: center;
+    color: #922610;
+    width: 100% !important;
+    display: table;
+    table-layout: fixed;
+    background: #FDF1DC;
 }
