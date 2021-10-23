@@ -42,6 +42,7 @@
  ******************************************************************************/
 
 .stats {
+    font-variant: small-caps;
     margin: 0 !important;
     margin-top: 1em !important;
     font-family: 'Libre Baskerville', 'Lora', 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;
@@ -51,11 +52,37 @@
     background: #FDF1DC;
 }
 
+.sub {
+    margin-top: 0 !important;
+    border-top: none;
+    padding-top: 1em;
+}
+
 .stats ~ p.stat, .stats ~p.ability {
     color: black;
     margin: 0;
     padding: 0.2em 0.5em;
     background: #FDF1DC;
+}
+
+.stat-list {
+    background: #FDF1DC;
+    margin: 0 !important;
+    padding: 0.5em !important;
+    list-style-position: inside;
+}
+
+.stat-list li {
+    margin: .5em 0 0 0 !important;
+    padding: .25em;
+}
+
+.stat-list li:nth-child(even) {
+    background-color: #e0e5c1;
+}
+
+.stat-list + p {
+    padding-top: 1em !important;
 }
 
 .stats ~p.alignment {
